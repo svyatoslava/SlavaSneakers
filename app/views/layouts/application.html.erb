@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sneakers</title>
+    <title>HSESneaker</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,11 @@
   </head>
 
   <body>
+    <nav>
+      <%= link_to 'Brands',   brands_url %>
+      <%= link_to 'Sneakers', sneakers_url %>
+    </nav>
+
     <%= yield %>
   </body>
 </html>

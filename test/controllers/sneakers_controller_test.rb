@@ -17,7 +17,7 @@ class SneakersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create sneaker" do
     assert_difference('Sneaker.count') do
-      post sneakers_url, params: { sneaker: { brand_id: @sneaker.brand_id, image: @sneaker.image, model: @sneaker.model, price: @sneaker.price, sex: @sneaker.sex } }
+      post sneakers_url, params: { sneaker: { brand_id: @sneaker.brand_id, model: @sneaker.model, price: @sneaker.price } }
     end
 
     assert_redirected_to sneaker_url(Sneaker.last)
@@ -34,7 +34,7 @@ class SneakersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update sneaker" do
-    patch sneaker_url(@sneaker), params: { sneaker: { brand_id: @sneaker.brand_id, image: @sneaker.image, model: @sneaker.model, price: @sneaker.price, sex: @sneaker.sex } }
+    patch sneaker_url(@sneaker), params: { sneaker: { brand_id: @sneaker.brand_id, model: @sneaker.model, price: @sneaker.price } }
     assert_redirected_to sneaker_url(@sneaker)
   end
 

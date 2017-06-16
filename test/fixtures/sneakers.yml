@@ -3,13 +3,9 @@
 one:
   brand_id: 1
   model: MyString
-  sex: MyString
   price: 1
-  image: MyString
 
 two:
   brand_id: 1
   model: MyString
-  sex: MyString
   price: 1
-  image: MyString

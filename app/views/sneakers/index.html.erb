@@ -9,7 +9,6 @@
       <th>Model</th>
       <th>Sex</th>
       <th>Price</th>
-      <th>Image</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,11 +16,10 @@
   <tbody>
     <% @sneakers.each do |sneaker| %>
       <tr>
-        <td><%= sneaker.brand_id %></td>
+        <td><%= sneaker.brand.name %></td>
         <td><%= sneaker.model %></td>
         <td><%= sneaker.sex %></td>
         <td><%= sneaker.price %></td>
-        <td><%= sneaker.image %></td>
         <td><%= link_to 'Show', sneaker %></td>
         <td><%= link_to 'Edit', edit_sneaker_path(sneaker) %></td>
         <td><%= link_to 'Destroy', sneaker, method: :delete, data: { confirm: 'Are you sure?' } %></td>
