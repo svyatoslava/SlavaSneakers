@@ -5,10 +5,9 @@
   <%= @brand.name %>
 </p>
 
-<p>
-  <strong>Logo:</strong>
-  <%= @brand.logo %>
-</p>
+<div>
+  <%= logo_tag @brand.logo %>
+</div>
 
 <%= link_to 'Edit', edit_brand_path(@brand) %> |
 <%= link_to 'Back', brands_path %>
